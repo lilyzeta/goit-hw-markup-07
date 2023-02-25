@@ -259,7 +259,7 @@ img {
   background-color: var(--accentbright);
 }
 
-.footer-subscribe {
+.footer__subscribe {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -270,7 +270,7 @@ img {
   color: var(--mainbright);
 }
 
-.foot-email {
+.footer__email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -292,7 +292,7 @@ img {
   color: var(--mainbright);
 }
 
-.foot-email::placeholder {
+.footer__email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -318,7 +318,7 @@ img {
   color: var(--mainbright);
 }
 
-.footer-right-section {
+.footer__right {
   margin-left: auto;
 }
 
