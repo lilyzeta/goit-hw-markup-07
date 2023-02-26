@@ -534,7 +534,7 @@ img {
   justify-content: center;
   margin-bottom: 30px;
 }
-.team__item:not(:last-child) {
+.team__social:not(:last-child) {
   margin-right: 10px;
 }
 .team__link {
