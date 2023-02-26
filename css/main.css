@@ -483,6 +483,11 @@ img {
   line-height: 0.8571428571;
   color: #757575;
 }
+.modal__box .modal__box:hover,
+.modal__box .modal__box:focus {
+  border-color: #2196f3;
+  outline: none;
+}
 
 .modal__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -500,6 +505,10 @@ img {
   color: #757575;
   resize: none;
 }
+.modal__comment:hover, .modal__comment:focus {
+  border-color: #2196f3;
+  outline: none;
+}
 
 .modal__comment::placeholder {
   font-family: "Roboto";
@@ -508,14 +517,6 @@ img {
   font-size: 12px;
   line-height: 0.8571428571;
   color: #757575;
-}
-
-.modal__box:hover,
-.modal__box:focus,
-.modal__comment:hover,
-.modal__comment:focus {
-  border-color: #2196f3;
-  outline: none;
 }
 
 .modal__icon {

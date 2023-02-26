@@ -128,6 +128,11 @@
   font-size: 12px;
   line-height: calc(12 / 14);
   color: $mainmid;
+  .modal__box:hover,
+  .modal__box:focus {
+    border-color: $accentbright;
+    outline: none;
+  }
 }
 .modal__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -144,6 +149,11 @@
   line-height: calc(12 / 14);
   color: $mainmid;
   resize: none;
+  &:hover,
+  &:focus {
+    border-color: $accentbright;
+    outline: none;
+  }
 }
 .modal__comment::placeholder {
   font-family: "Roboto";
@@ -152,14 +162,6 @@
   font-size: 12px;
   line-height: calc(12 / 14);
   color: $mainmid;
-}
-
-.modal__box:hover,
-.modal__box:focus,
-.modal__comment:hover,
-.modal__comment:focus {
-  border-color: $accentbright;
-  outline: none;
 }
 
 .modal__icon {
