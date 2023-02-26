@@ -1,0 +1,32 @@
+.modal__button-icon {
+  fill: var(--maindark);
+  left: 22.22%;
+  right: 16.67%;
+  top: 16.67%;
+  bottom: 22.22%;
+}
+
+.modal__field {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.modal__form {
+  position: relative;
+}
+c .modal__wrapper {
+  display: block;
+  position: relative;
+}
+
+.modal__icon {
+  position: absolute;
+  top: middle;
+  left: smaller;
+  fill: var(--mainmid);
+}
+
+.checkbox__text {
+  display: flex;
+  align-items: center;
+}
