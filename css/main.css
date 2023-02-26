@@ -842,7 +842,7 @@ img {
 }
 
 .modal__button-icon {
-  fill: var(--maindark);
+  fill: #212121;
   left: 22.22%;
   right: 16.67%;
   top: 16.67%;
@@ -873,8 +873,8 @@ img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  color: var(--maindark);
-  background-color: var(--mainbright);
+  color: #212121;
+  background-color: #ffffff;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -885,7 +885,7 @@ img {
 }
 
 .modal__button-icon {
-  fill: var(--maindark);
+  fill: #212121;
   left: 22.22%;
   right: 16.67%;
   top: 16.67%;
@@ -896,7 +896,7 @@ img {
   position: absolute;
   top: 16px;
   left: 12px;
-  fill: var(--mainmid);
+  fill: #757575;
 }
 
 .modal__box:hover + .modal__icon,

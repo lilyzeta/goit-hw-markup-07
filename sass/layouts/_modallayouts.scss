@@ -1,5 +1,5 @@
 .modal__button-icon {
-  fill: var(--maindark);
+  fill: $maindark;
   left: 22.22%;
   right: 16.67%;
   top: 16.67%;
@@ -28,8 +28,8 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  color: var(--maindark);
-  background-color: var(--mainbright);
+  color: $maindark;
+  background-color: $mainbright;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 .modal__button-icon {
-  fill: var(--maindark);
+  fill: $maindark;
   left: 22.22%;
   right: 16.67%;
   top: 16.67%;
@@ -48,7 +48,7 @@
   position: absolute;
   top: 16px;
   left: 12px;
-  fill: var(--mainmid);
+  fill: $mainmid;
 }
 .modal__box:hover + .modal__icon,
 .modal__box:focus + .modal__icon {
