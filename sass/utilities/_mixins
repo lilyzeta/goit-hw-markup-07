@@ -1,0 +1,3 @@
+@mixin pointy() {
+  cursor: pointer;
+}
