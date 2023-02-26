@@ -363,6 +363,7 @@ img {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: modal-animation;
 }
 
 .hero__button:click {
@@ -376,12 +377,6 @@ img {
 .hero__button:focus {
   background-color: #ffffff;
   color: #2196f3;
-}
-
-.hero__button:click {
-  animation-name: modal-animation;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__background {
@@ -535,7 +530,7 @@ img {
   fill: #2196f3;
 }
 
-.modal-link {
+.modal__link {
   color: #2196f3;
   cursor: pointer;
 }
@@ -555,6 +550,17 @@ img {
   background-color: #2196f3;
   border: solid 1px #2196f3;
   cursor: pointer;
+}
+
+.checkbox__wrapper {
+  height: 15px;
+  width: 16px;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 .checkbox {
@@ -581,17 +587,6 @@ img {
 .checkbox__text {
   display: flex;
   align-items: center;
-}
-
-.checkbox__wrapper {
-  height: 15px;
-  width: 16px;
-  border: 1px solid #757575;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
 }
 
 .checkbox__text:hover,

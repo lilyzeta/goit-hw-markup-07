@@ -13,6 +13,7 @@
   transition-property: background-color, color;
   transition-duration: $time;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: modal-animation;
 }
 
 .hero__button:click {
@@ -27,11 +28,7 @@
   background-color: $mainbright;
   color: $accentbright;
 }
-.hero__button:click {
-  animation-name: modal-animation;
-  animation-duration: $time;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .modal__background {
   position: fixed;
   height: 100vh;
@@ -177,7 +174,7 @@
   fill: $accentbright;
 }
 
-.modal-link {
+.modal__link {
   color: $accentbright;
   cursor: pointer;
 }
@@ -199,7 +196,16 @@
     cursor: pointer;
   }
 }
-
+.checkbox__wrapper {
+  height: 15px;
+  width: 16px;
+  border: 1px solid $mainmid;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
 .checkbox {
   font-family: "Roboto";
   font-style: normal;
@@ -224,16 +230,7 @@
   display: flex;
   align-items: center;
 }
-.checkbox__wrapper {
-  height: 15px;
-  width: 16px;
-  border: 1px solid $mainmid;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-}
+
 .checkbox__text:hover,
 .checkbox__text:focus {
   cursor: pointer;
