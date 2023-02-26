@@ -85,10 +85,6 @@
   border-color: $accentbright;
   outline: none;
 }
-.modal__box:hover + .modal__icon,
-.modal__box:focus + .modal__icon {
-  fill: $accentbright;
-}
 
 .modal-link {
   color: $accentbright;
@@ -165,19 +161,4 @@
   animation-name: modal-animation;
   animation-duration: $time;
   animation-timing-function: $cubic;
-}
-
-.modal__button {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  color: $maindark;
-  background-color: $mainbright;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-.modal__button:hover.modal__button:focus {
-  cursor: pointer;
 }
