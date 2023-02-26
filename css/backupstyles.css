@@ -174,7 +174,7 @@ img {
   display: block;
   align-content: flex-start;
 }
-.address__block {
+.address {
   font-style: normal;
   margin-bottom: 27px;
   margin-right: 0px;
@@ -220,7 +220,7 @@ img {
   display: block;
 }
 
-.social__header {
+.footer__social-title {
   color: var(--mainbright);
   font-family: roboto;
   font-weight: 700;
@@ -230,14 +230,14 @@ img {
   font-style: normal;
   margin-bottom: 20px;
 }
-.social__list {
+.footer__social-list {
   display: flex;
 }
 
-.social__item:not(:last-child) {
+.footer__social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social__link {
+.footer__social-link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -251,11 +251,11 @@ img {
   transition-duration: var(--time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social__icon {
+.footer__social-icon {
   fill: currentColor;
 }
-.social__link:hover,
-.social__link:focus {
+.footer__social-link:hover,
+.footer__social-link:focus {
   background-color: var(--accentbright);
 }
 
@@ -359,7 +359,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero__text {
+.hero__title {
   font-weight: 900;
   color: var(--mainbright);
   font-size: 44px;
@@ -370,7 +370,7 @@ img {
   margin-bottom: 30px;
 }
 
-.promobutton {
+.hero__button {
   font-family: roboto;
   font-weight: 700;
   background-color: var(--accentbright);
@@ -388,8 +388,8 @@ img {
   animation: modal-animation;
 }
 
-.promobutton:hover,
-.promobutton:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--mainbright);
   color: var(--accentbright);
 }
@@ -404,13 +404,13 @@ img {
 .features__item:not(:last-child) {
   margin-right: 30px;
 }
-.features__background {
+.features__icon-background {
   background-color: var(--accentbackground);
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-.features__svg {
+.features__icon {
   margin: 25px 100px;
 }
 
@@ -494,7 +494,7 @@ img {
   text-align: center;
 }
 
-.team__nametag {
+.team__name {
   color: var(--maindark);
   font-weight: 500;
   font-size: 16px;
@@ -513,7 +513,7 @@ img {
   margin-bottom: 16px;
   background-color: var(--mainbright);
 }
-.team__list {
+.team__social-list {
   display: flex;
 }
 .team__item {
@@ -529,15 +529,15 @@ img {
 .team__item:not(:last-child) {
   margin-right: 30px;
 }
-.team__list {
+.team__social-list {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.team__social:not(:last-child) {
+.team__social-item:not(:last-child) {
   margin-right: 10px;
 }
-.team__link {
+.team__social-link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -550,12 +550,12 @@ img {
   transition-duration: var(--time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team__link:hover,
-.team__link:focus {
+.team__social-link:hover,
+.team__social-link:focus {
   background-color: var(--accentbright);
   color: var(--mainbright);
 }
-.team__icon:hover .team__icon:focus {
+.team__social-icon:hover .team__social-icon:focus {
   fill: var(--mainbright);
 }
 
@@ -579,7 +579,7 @@ img {
   display: flex;
   justify-content: center;
 }
-.customers-svg {
+.customers__icon {
   fill: currentColor;
 }
 .customers__item:not(:last-child) {
@@ -761,14 +761,14 @@ img {
 .modal__button:hover.modal__button:focus {
   cursor: pointer;
 }
-.modal__close {
+.modal__button-icon {
   fill: var(--maindark);
   left: 22.22%;
   right: 16.67%;
   top: 16.67%;
   bottom: 22.22%;
 }
-.promobutton:click {
+.hero__button:click {
   animation-name: modal-animation;
   animation-duration: var(--time);
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

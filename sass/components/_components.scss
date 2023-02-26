@@ -99,7 +99,7 @@
   font-family: roboto;
 }
 
-.social__header {
+.footer__social-title {
   color: $mainbright;
   font-family: roboto;
   font-weight: $boldweight;
@@ -110,7 +110,7 @@
   margin-bottom: 20px;
 }
 
-.social__link {
+.footer__social-link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -124,12 +124,12 @@
   transition-duration: $time;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social__icon {
+.footer__social-icon {
   fill: currentColor;
 }
 
-.social__link:hover,
-.social__link:focus {
+.footer__social-link:hover,
+.footer__social-link:focus {
   background-color: $accentbright;
 }
 
@@ -220,7 +220,7 @@
   background-repeat: no-repeat;
 }
 
-.hero__text {
+.hero__title {
   font-weight: $heaviestweight;
   color: $mainbright;
   font-size: 44px;
@@ -231,7 +231,7 @@
   margin-bottom: 30px;
 }
 
-.promobutton {
+.hero__button {
   font-family: roboto;
   font-weight: $boldweight;
   background-color: $accentbright;
@@ -249,8 +249,8 @@
   animation: modal-animation;
 }
 
-.promobutton:hover,
-.promobutton:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: $mainbright;
   color: $accentbright;
 }
@@ -305,7 +305,7 @@
   text-align: center;
 }
 
-.team__nametag {
+.team__name {
   color: $maindark;
   font-weight: $midweight;
   font-size: 16px;
@@ -336,7 +336,7 @@
   border-bottom-right-radius: 4px;
 }
 
-.team__link {
+.team__social-link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -350,12 +350,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__link:hover,
-.team__link:focus {
+.team__social-link:hover,
+.team__social-link:focus {
   background-color: $accentbright;
   color: $mainbright;
 }
-.team__icon:hover .team__icon:focus {
+.team__social-icon:hover .team__social-icon:focus {
   fill: var(--mainbright);
 }
 .customers__title {
@@ -370,7 +370,7 @@
   display: block;
   margin-bottom: 30px;
 }
-.customers-svg {
+.customers__icon {
   fill: currentColor;
 }
 .customers__link {
@@ -417,7 +417,7 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.art-back {
+.project__card-item {
   background-color: $mainbright;
   margin-left: 30px;
   margin-top: 30px;
@@ -427,19 +427,19 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.art-back:hover,
-.art-back:focus {
+.project__card-item:hover,
+.project__card-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.art-text {
+.project__text {
   padding: 20px 24px;
   border-bottom: 1px solid $bordercolor;
   border-left: 1px solid $bordercolor;
   border-right: 1px solid $bordercolor;
 }
-.art-name {
+.project__name {
   color: $maindark;
   font-size: 18px;
   line-height: 2;
@@ -447,13 +447,13 @@
   margin-bottom: 4px;
 }
 
-.art-desc {
+.project__description {
   font-size: 16px;
   line-height: 1.88;
   color: $mainmid;
   letter-spacing: 0.03em;
 }
-.art-overlay {
+.project__card-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -475,7 +475,7 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-.art-back:hover .art-overlay {
+.project__card-item:hover .project__card-overlay {
   transform: translateY(0px);
   transition: transform 350ms ease;
 }
@@ -523,7 +523,7 @@
   cursor: pointer;
 }
 
-.promobutton:click {
+.hero__button:click {
   animation-name: modal-animation;
   animation-duration: $time;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

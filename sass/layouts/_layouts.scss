@@ -36,7 +36,7 @@
   display: block;
   align-content: flex-start;
 }
-.address__block {
+.address {
   font-style: normal;
   margin-bottom: 27px;
   margin-right: 0px;
@@ -59,11 +59,11 @@
   display: block;
 }
 
-.social__list {
+.footer__social-list {
   display: flex;
 }
 
-.social__item:not(:last-child) {
+.footer__social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -84,13 +84,13 @@
 .features__item:not(:last-child) {
   margin-right: 30px;
 }
-.features__background {
+.features__icon-background {
   background-color: $accentbackground;
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-.features__svg {
+.features__icon {
   margin: 25px 100px;
 }
 .services {
@@ -123,19 +123,19 @@
   padding: 94px 0;
 }
 
-.team__list {
+.team__social-list {
   display: flex;
 }
 
 .team__item:not(:last-child) {
   margin-right: 30px;
 }
-.team__list {
+.team__social-list {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.team__social:not(:last-child) {
+.team__social-item:not(:last-child) {
   margin-right: 10px;
 }
 .customers {
@@ -151,34 +151,34 @@
   margin-right: 30px;
 }
 
-.project-section {
+.project__section {
   padding: 94px 0;
 }
 
-.gallery-button-container {
+.project__button-list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
-.gallery-button-item:not(:last-child) {
+.project__button-item:not(:last-child) {
   margin-right: 9px;
 }
 
-.my-project-list {
+.project__card-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * 30px);
   margin-left: calc(-1 * 30px);
 }
 
-.art-image {
+.project__card-image {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
 }
 
-.modal__close {
+.modal__button-icon {
   fill: var(--maindark);
   left: 22.22%;
   right: 16.67%;
