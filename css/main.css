@@ -386,8 +386,6 @@ img {
   background: rgba(0, 0, 0, 0.2);
   top: 0;
   left: 0;
-  opacity: 1;
-  visibility: visible;
   animation-name: modal-animation;
 }
 
@@ -483,8 +481,7 @@ img {
   line-height: 0.8571428571;
   color: #757575;
 }
-.modal__box .modal__box:hover,
-.modal__box .modal__box:focus {
+.modal__box:hover, .modal__box:focus {
   border-color: #2196f3;
   outline: none;
 }
@@ -547,7 +544,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal__submit:hover, .modal__submit:focus {
-  color: #2196f3;
+  color: #ffffff;
   background-color: #2196f3;
   border: solid 1px #2196f3;
   cursor: pointer;

@@ -36,8 +36,8 @@
   background: rgba(0, 0, 0, 0.2);
   top: 0;
   left: 0;
-  opacity: 1;
-  visibility: visible;
+  // opacity: 1;
+  // visibility: visible;
   animation-name: modal-animation;
 }
 
@@ -128,8 +128,8 @@
   font-size: 12px;
   line-height: calc(12 / 14);
   color: $mainmid;
-  .modal__box:hover,
-  .modal__box:focus {
+  &:hover,
+  &:focus {
     border-color: $accentbright;
     outline: none;
   }
@@ -192,7 +192,7 @@
 
   &:hover,
   &:focus {
-    color: $accentbright;
+    color: $mainbright;
     background-color: $accentbright;
     border: solid 1px $accentbright;
     cursor: pointer;
