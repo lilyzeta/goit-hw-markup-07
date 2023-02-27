@@ -47,14 +47,13 @@
   transition-property: background-color;
   transition-duration: $time;
   transition-timing-function: $cubic;
+  &:hover,
+  &:focus {
+    background-color: $accentbright;
+  }
 }
 .footer__social-icon {
   fill: currentColor;
-}
-
-.footer__social-link:hover,
-.footer__social-link:focus {
-  background-color: $accentbright;
 }
 
 .email__label {
@@ -88,10 +87,9 @@
   padding-left: 16px;
   outline: none;
   color: $mainbright;
-}
-
-.email__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .email__button {
@@ -109,6 +107,19 @@
   font-size: 16px;
   line-height: calc(30 / 16);
   color: $mainbright;
+  &:hover,
+  &:focus {
+    color: $accentbright;
+    background-color: $accentbackground;
+    border: solid 1px $accentbright;
+    fill: $accentbright;
+  }
+  &:hover > .email__svg {
+    fill: $accentbright;
+  }
+  &:focus > .email__svg {
+    fill: $accentbright;
+  }
 }
 
 .email__svg {
@@ -116,18 +127,4 @@
   position: absolute;
   top: 33px;
   left: 518px;
-}
-.email__button:hover,
-.email__button:focus {
-  color: $accentbright;
-  background-color: $accentbackground;
-  border: solid 1px $accentbright;
-  fill: $accentbright;
-}
-
-.email__button:hover > .email__svg {
-  fill: $accentbright;
-}
-.email__button:focus > .email__svg {
-  fill: $accentbright;
 }

@@ -14,19 +14,18 @@
   transition-duration: $time;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation: modal-animation;
-}
+  &:hover,
+  &:focus {
+    background-color: $mainbright;
+    color: $accentbright;
+  }
 
-.hero__button:click {
-  animation-name: modal-animation;
-  animation-duration: $time;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation: modal-animation;
-}
-
-.hero__button:hover,
-.hero__button:focus {
-  background-color: $mainbright;
-  color: $accentbright;
+  &:click {
+    animation-name: modal-animation;
+    animation-duration: $time;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: modal-animation;
+  }
 }
 
 .modal__background {
@@ -67,10 +66,10 @@
   position: absolute;
   top: 8px;
   right: 8px;
-}
-.modal__button:hover,
-.modal__button:focus {
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .modal__button-icon {
@@ -133,6 +132,10 @@
     border-color: $accentbright;
     outline: none;
   }
+  &:hover + .modal__icon,
+  &:focus + .modal__icon {
+    fill: $accentbright;
+  }
 }
 .modal__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -154,14 +157,14 @@
     border-color: $accentbright;
     outline: none;
   }
-}
-.modal__comment::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(12 / 14);
-  color: $mainmid;
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(12 / 14);
+    color: $mainmid;
+  }
 }
 
 .modal__icon {
@@ -169,11 +172,6 @@
   top: 16px;
   left: 12px;
   fill: $mainmid;
-}
-
-.modal__box:hover + .modal__icon,
-.modal__box:focus + .modal__icon {
-  fill: $accentbright;
 }
 
 .modal__link {
@@ -227,24 +225,25 @@
   overflow: hidden;
   border: 0;
   clip: rect (0 0 0 0);
+  &:checked + .checkbox__text > .checkbox__wrapper {
+    background-color: $accentbright;
+    border: none;
+  }
 }
 .checkbox__text {
   display: flex;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
-.checkbox__text:hover,
-.checkbox__text:focus {
-  cursor: pointer;
-}
 .checkbox__icon {
   fill: $mainbright;
 }
 
-.checkbox__hidden:checked + .checkbox__text > .checkbox__wrapper {
-  background-color: $accentbright;
-  border: none;
-}
 @keyframes modal-animation {
   0% {
     visibility: hidden;

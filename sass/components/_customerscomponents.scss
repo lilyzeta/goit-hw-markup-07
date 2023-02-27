@@ -25,10 +25,9 @@
   transition-property: color, border-color;
   transition-duration: $time;
   transition-timing-function: $cubic;
-}
-
-.customers__link:hover,
-.customers__link:focus {
-  border-color: $accentbright;
-  color: $accentbright;
+  &:hover,
+  &:focus {
+    border-color: $accentbright;
+    color: $accentbright;
+  }
 }
